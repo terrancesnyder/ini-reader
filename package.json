@@ -1,0 +1,16 @@
+{
+  "name": "ini-settings",
+  "version": "0.0.1",
+  "description": "Allows reading and writing to INI files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Terrance A. Snyder",
+  "license": "Apache",
+  "dependencies": {
+    "ini": "x",
+    "underscore": "x",
+    "fs": "x"
+  }
+}
