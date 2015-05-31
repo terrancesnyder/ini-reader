@@ -4,7 +4,7 @@ var ini = require('ini');
 
 var section = function(obj) {
   return {
-    value: function(property) {
+    get: function(property) {
       return ini_get_string_value(obj, property);
     }
   };
@@ -36,7 +36,7 @@ exports.open = function(options) {
   var ini_object = ini.parse(fs.readFileSync(options.file, options.encoding));
 
   return {
-    get: function(property) {
+    section: function(property) {
       return new section(ini_get_string_value(ini_object, property));
     }
   };
