@@ -1,5 +1,5 @@
 {
-  "name": "ini-settings",
+  "name": "ini-reader",
   "version": "0.0.1",
   "description": "Allows reading and writing to INI files",
   "main": "index.js",
